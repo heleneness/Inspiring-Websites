@@ -1,0 +1,123 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Courier New', Courier, monospace;
+	max-width: 55rem;
+	padding: 2rem 1.5rem;
+	margin: auto;
+	color: #241623;
+	background: linear-gradient(25deg, #C0C0C0, #b8bced);
+  }
+
+.ball {
+	width: 50px;
+	height: 50px;
+	rotate: 10deg;
+	background-image: url(images/ball.png);
+	animation: wave 4s infinite alternate;
+}
+
+
+@keyframes wave {
+  0% {
+    transform: translate(0px,10px);
+  }
+    20% {
+    transform: translate(40px,90px) rotate(20deg);
+  }
+    40% {
+    transform: translate(80px,10px) rotate(40deg);
+  }
+    60% {
+    transform: translate(120px,90px) rotate(60deg);
+  }
+    80% {
+    transform: translate(160px,10px) rotate(80deg);
+  }
+    100% {
+    transform: translate(200px,90px) rotate(100deg);
+  }
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 2.7rem;
+  text-align: end;
+}
+
+h2 {
+	border: 1px solid black;
+	background-color: hsla(0, 0%, 0%, 0.75);
+	text-align: center;
+	font-weight: normal;
+}
+
+.info-one, .info-two {
+	text-align: end;
+}
+
+a {
+  color: currentcolor;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size, 10rem), 1fr));
+  grid-gap: 1rem;
+  padding: 0;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  aspect-ratio: auto 4/3;
+  position: relative;
+  padding: 1.5rem;
+  color: #ffffff;
+  backface-visibility: hidden;
+  text-decoration: none;
+  overflow: hidden;
+  border-radius: 2%;
+}
+
+.profile::after {
+  background: linear-gradient(45deg, hsla(214, 97%, 63%, 0.7) 0, hsl(5 97% 63% / 0) 100%);
+  opacity: 0;
+  transition: 300ms opacity linear;
+}
+
+.profile img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.profile h2,
+.profile p {
+  transform: translateY(2ex);
+}
+
+.profile h2 {
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 1.2;
+  transition: 300ms transform ease;
+}
+
+.profile p {
+  opacity: 0;
+  transition: 300ms opacity linear, 300ms transform ease-in-out;
+}
+
+.profile:hover :is(h2),
+.profile:focus :is(h2) {
+  transform: none;
+}

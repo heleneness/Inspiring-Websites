@@ -4,5 +4,6 @@
 
 ### Figma, html, css
 
-* Found inspiring fantasy pictures on Pixabay. Made a gallery website that links to other inspiring sites about codes and designs.
+* Found inspiring fantasy pictures on Pixabay.
+  Made a gallery website that links to other inspiring sites.
   Played with animation. 

@@ -1,4 +1,4 @@
-# Inspiring-Websites Task FFU100
+# Inspiring-Websites Task
 
 ## Second FFU task following topics
 

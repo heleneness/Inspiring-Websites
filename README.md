@@ -1,6 +1,6 @@
 # Inspiring-Websites Task
 
-## 2nd FFU task following topics
+## 2nd FFU1100 task following topics
 
 ### Figma, html, css
 

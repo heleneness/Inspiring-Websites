@@ -6,4 +6,7 @@
 
 * Found inspiring fantasy pictures on Pixabay.
 * Made a gallery website that links to other inspiring sites.
-* Played with animation. 
+* Played with animation.
+
+  Link to Netlify:
+  https://unique-pegasus-648589.netlify.app
